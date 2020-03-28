@@ -13,10 +13,11 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductGirdComponent } from './product-gird/product-gird.component';
 import { ContactComponent } from './contact/contact.component';
 import { CartComponent } from './cart/cart.component';
+import { OurBrandComponent } from './our-brand/our-brand.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, FooterComponent, HeaderComponent, HomeComponent, SliderComponent, HomeProductComponent, ProductListComponent, ProductGirdComponent, ContactComponent, CartComponent ],
+  declarations: [ AppComponent, HelloComponent, FooterComponent, HeaderComponent, HomeComponent, SliderComponent, HomeProductComponent, ProductListComponent, ProductGirdComponent, ContactComponent, CartComponent, OurBrandComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
