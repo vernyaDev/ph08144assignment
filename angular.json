@@ -72,7 +72,12 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "styles.css"
+              // "styles.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/flexslider.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/sequence-looptheme.css",
+              "src/assets/css/style.css"
             ],
             "scripts": [],
             "assets": [
