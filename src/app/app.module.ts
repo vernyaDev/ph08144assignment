@@ -10,10 +10,12 @@ import { HomeComponent } from './home/home.component';
 import { SliderComponent } from './slider/slider.component';
 import { HomeProductComponent } from './home-product/home-product.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductGirdComponent } from './product-gird/product-gird.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, FooterComponent, HeaderComponent, HomeComponent, SliderComponent, HomeProductComponent, ProductListComponent ],
+  declarations: [ AppComponent, HelloComponent, FooterComponent, HeaderComponent, HomeComponent, SliderComponent, HomeProductComponent, ProductListComponent, ProductGirdComponent, ContactComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
