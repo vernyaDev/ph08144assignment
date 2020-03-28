@@ -28,7 +28,8 @@
               "src/asset/css/bootstrap.css",
               "src/asset/css/flexslider.css",
               "src/asset/css/font-awesome.min.css",
-              "src/asset/css/sequence-looptheme.css"
+              "src/asset/css/sequence-looptheme.css",
+              "src/asset/css/stylePNF404"
               
             ],
             "scripts": []
