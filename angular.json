@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              // "src/styles.css",
+              "src/styles.css",
               "src/asset/css/style.css",
               "src/asset/css/bootstrap.css",
               "src/asset/css/flexslider.css",
