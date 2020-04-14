@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: "cart", component: CartComponent },
   { path: "about", component: AboutComponent },
   { path: "blog", component: AboutComponent },
-  // { path: "manager", component: ProductManagerComponent },
+  { path: "manager", component: ProductManagerComponent },
   { path: '**',component: PageNotFound404Component}
 ];
 
