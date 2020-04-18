@@ -22,11 +22,14 @@ import { BlogComponent } from './blog/blog.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { PageNotFound404Component } from './page-not-found404/page-not-found404.component';
 import { AdminComponent } from './admin/admin.component';
+import { ProductService } from './service/product.service';
+
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, FooterComponent, HeaderComponent, HomeComponent, SliderComponent, HomeProductComponent, ProductListComponent, ProductGirdComponent, ContactComponent, CartComponent, OurBrandComponent, ProductDetailsComponent, AboutComponent, BlogComponent, ProductManagerComponent, PageNotFound404Component, AdminComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+   providers: [ProductService]
 })
 export class AppModule { }

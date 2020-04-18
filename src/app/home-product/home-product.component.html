@@ -6,12 +6,12 @@
 			<div class="control"><a id="prev_hot" class="prev" href="#">&lt;</a><a id="next_hot" class="next"
 					href="#">&gt;</a></div>
 			<ul id="hot">
-				<li *ngFor='let product of products'>
-					<div class="row" >
-						<div class="col-md-3 col-sm-6">
+				<li >
+					<div ngClass="row" >
+						<div ngClass="col-lg-4 col-md-6 mb-3" *ngFor='let product of products'>
 							<div class="products">
 								<div class="thumbnail"><a
-										routerLink="/productDetail"><img  alt="Product Name"></a>
+										routerLink="/productDetail"><img src={{product.img alt="Product Name"></a>
 								</div>
 								<div class="productname">{{product.name}}</div>
 								<h4 class="price">${{product.price}}</h4>
@@ -21,11 +21,9 @@
 							</div>
 						</div>
 					</div>
-				</li>
+				</li>	
 			</ul>
 		</div>
-		<div class="clearfix"></div>
-		<div class="clearfix"></div>
 		<div class="our-brand">
 			<h3 class="title"><strong>Our </strong> Brands</h3>
 			<div class="control"><a id="prev_brand" class="prev" href="#">&lt;</a><a id="next_brand" class="next"
