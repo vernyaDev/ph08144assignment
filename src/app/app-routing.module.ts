@@ -10,6 +10,7 @@ import { ProductDetailsComponent } from "./product-details/product-details.compo
 import { ProductManagerComponent } from "./product-manager/product-manager.component";
 import { AboutComponent } from "./about/about.component";
 import { BlogComponent } from "./blog/blog.component";
+import { AdminComponent } from "./admin/admin.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -21,7 +22,11 @@ const routes: Routes = [
   { path: "cart", component: CartComponent },
   { path: "about", component: AboutComponent },
   { path: "blog", component: AboutComponent },
-  { path: "manager", component: ProductManagerComponent },
+  { path: 'admin', component: AdminComponent,
+    children: [
+    { path: '', redirectTo: 'manger', pathMatch: 'full' },
+    { path: 'manger', component: ProductManagerComponent },
+    ]},
   { path: '**',component: PageNotFound404Component}
 ];
 

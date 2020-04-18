@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/asset/css/sb-admin-2.scss",
               "src/asset/css/main.css",
               "src/styles.css",
               "src/asset/css/bootstrap.css",
