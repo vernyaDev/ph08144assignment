@@ -23,6 +23,7 @@ export class ProductService {
   removeProduct(id): Observable<Product> {
     return this.http.delete<Product>(`${this.api}/${id}`);
   }
+
   addProduct(product): Observable<Product> {
     return this.http.post<Product>(`${this.api}`, product);
   }
