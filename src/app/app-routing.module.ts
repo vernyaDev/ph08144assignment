@@ -24,8 +24,8 @@ const routes: Routes = [
   { path: "blog", component: AboutComponent },
   { path: 'admin', component: AdminComponent,
     children: [
-    { path: '', redirectTo: 'manger', pathMatch: 'full' },
-    { path: 'manger', component: ProductManagerComponent },
+    { path: '', redirectTo: 'manager', pathMatch: 'full' },
+    { path: 'manager', component: ProductManagerComponent },
     ]},
   { path: '**',component: PageNotFound404Component}
 ];
