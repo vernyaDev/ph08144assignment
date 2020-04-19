@@ -11,17 +11,20 @@ import { ProductManagerComponent } from "./product-manager/product-manager.compo
 import { AboutComponent } from "./about/about.component";
 import { BlogComponent } from "./blog/blog.component";
 import { AdminComponent } from "./admin/admin.component";
+import { HomeProductComponent } from "./home-product/home-product.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
-  { path: "home", component: HomeComponent },
-  { path: "products", component: ProductListComponent },
-  { path: "productDetail", component: ProductDetailsComponent },
-  { path: "productGird", component: ProductGirdComponent },
-  { path: "contact", component: ContactComponent },
-  { path: "cart", component: CartComponent },
-  { path: "about", component: AboutComponent },
-  { path: "blog", component: AboutComponent },
+  { path: "home", component: HomeComponent,children:[
+    { path: "products", component: ProductListComponent },
+    { path: "", component: HomeProductComponent },
+    { path: "productDetail", component: ProductDetailsComponent },
+    { path: "productGird", component: ProductGirdComponent },
+    { path: "contact", component: ContactComponent },
+    { path: "cart", component: CartComponent },
+    { path: "about", component: AboutComponent },
+    { path: "blog", component: AboutComponent },
+  ] },
   { path: 'admin', component: AdminComponent,
     children: [
     { path: '', redirectTo: 'manager', pathMatch: 'full' },
