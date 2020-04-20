@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from "../Product";
 import { ActivatedRoute, Router } from "@angular/router";
 import { ProductService } from "../service/product.service";
+import { Product } from "../product";
 
 @Component({
   selector: 'app-m-add-product',
@@ -18,6 +18,6 @@ product: Product = new Product();
  addProduct() {
     this.productService
       .addProduct(this.product)
-      .subscribe(data => this.router.navigateByUrl("/admin-manager"));
+      .subscribe(data => this.router.navigateByUrl("/admin/manager"));
   }
 }
