@@ -1,0 +1,22 @@
+<table class=table table-bordered>
+	<thead>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Desc</th>
+		<th></th>
+	</thead>
+	<tr *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+		<td>{{product.id}}</td>
+		<td>{{product.name}}</td>
+		<td>{{product.price}}</td>
+		<td>{{product.desc}}</td>
+		<td colspan="2">
+			<button  class="btn btn-primary" (click)='removeProduct(product.id)' >Xoá</button>
+			<button  class="btn btn-primary" routerLink='/product/edit/{{product.id}}' >Sửa</button>
+		</td>
+	</tr>
+</table>
+<ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="products.length"></ngb-pagination>
+<a class="nav-link" routerLink="/add-product">
+	<button  class="btn btn-primary" >Add Product</button></a>

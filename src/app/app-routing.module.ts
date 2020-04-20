@@ -12,6 +12,7 @@ import { AboutComponent } from "./about/about.component";
 import { BlogComponent } from "./blog/blog.component";
 import { AdminComponent } from "./admin/admin.component";
 import { HomeProductComponent } from "./home-product/home-product.component";
+import { MListProductComponent } from "./m-list-product/m-list-product.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -28,7 +29,11 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent,
     children: [
     { path: '', redirectTo: 'manager', pathMatch: 'full' },
-    { path: 'manager', component: ProductManagerComponent },
+    { path: 'manager', component: ProductManagerComponent,
+    children:[
+      { path: '', redirectTo: 'listProduct', pathMatch: 'full' },
+      { path: 'listProduct', component: MListProductComponent }
+    ] },
     ]},
   { path: '**',component: PageNotFound404Component}
 ];
