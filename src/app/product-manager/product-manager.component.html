@@ -1,6 +1,4 @@
-<h2>Manager Product</h2> <a class="nav-link" routerLink="/add-product">
-	<button  class="btn btn-primary" >Add Product</button>
-</a>
+<h2>Manager Product</h2>
 <table class=table table-bordered>
 	<thead>
 		<th>ID</th>
@@ -15,14 +13,11 @@
 		<td>{{product.price}}</td>
 		<td>{{product.desc}}</td>
 		<td colspan="2">
-      <button  class="btn btn-primary" (click)='removeProduct(product.id)' >Xoá</button>
+			<button  class="btn btn-primary" (click)='removeProduct(product.id)' >Xoá</button>
 			<button  class="btn btn-primary" routerLink='/product/edit/{{product.id}}' >Sửa</button>
 		</td>
 	</tr>
 </table>
-<ngb-pagination
-  [(page)]="page"
-  [pageSize]="pageSize"
-  [collectionSize]="products.length"></ngb-pagination>
-
-
+<ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="products.length"></ngb-pagination>
+<a class="nav-link" routerLink="/add-product">
+	<button  class="btn btn-primary" >Add Product</button></a>
