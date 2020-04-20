@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from "../service/product.service";
 import { Product } from "../Product";
 
@@ -31,7 +31,7 @@ export class MEditProductComponent implements OnInit {
 
   updateProduct() {
     this.productService.updateProduct(this.product).subscribe(data => {
-      this.router.navigateByUrl("/products");
+      this.router.navigateByUrl("/admin/man");
     });
   }
 }
