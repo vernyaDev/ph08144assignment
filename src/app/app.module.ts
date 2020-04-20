@@ -25,12 +25,13 @@ import { PageNotFound404Component } from './page-not-found404/page-not-found404.
 import { AdminComponent } from './admin/admin.component';
 import { ProductService } from './service/product.service';
 import { MListProductComponent } from './m-list-product/m-list-product.component';
+import { MEditProductComponent } from './m-edit-product/m-edit-product.component';
 
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule ],
-  declarations: [ AppComponent, HelloComponent, FooterComponent, HeaderComponent, HomeComponent, SliderComponent, HomeProductComponent, ProductListComponent, ProductGirdComponent, ContactComponent, CartComponent, OurBrandComponent, ProductDetailsComponent, AboutComponent, BlogComponent, ProductManagerComponent, PageNotFound404Component, AdminComponent, MListProductComponent ],
+  declarations: [ AppComponent, HelloComponent, FooterComponent, HeaderComponent, HomeComponent, SliderComponent, HomeProductComponent, ProductListComponent, ProductGirdComponent, ContactComponent, CartComponent, OurBrandComponent, ProductDetailsComponent, AboutComponent, BlogComponent, ProductManagerComponent, PageNotFound404Component, AdminComponent, MListProductComponent, MEditProductComponent ],
   bootstrap:    [ AppComponent ],
    providers: [ProductService]
 })
