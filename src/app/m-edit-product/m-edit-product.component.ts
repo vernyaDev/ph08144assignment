@@ -31,7 +31,7 @@ export class MEditProductComponent implements OnInit {
 
   updateProduct() {
     this.productService.updateProduct(this.product).subscribe(data => {
-      this.router.navigateByUrl("/admin/man");
+      this.router.navigateByUrl("/admin/manager");
     });
   }
 }
