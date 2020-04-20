@@ -10,7 +10,7 @@ import { ProductService } from "../service/product.service";
 })
 export class MAddProductComponent implements OnInit {
 
-product: Product = new Productt();
+product: Product = new Product();
   constructor(private productService: ProductService, private router: Router) {}
 
   ngOnInit() {
@@ -18,6 +18,6 @@ product: Product = new Productt();
  addProduct() {
     this.productService
       .addProduct(this.product)
-      .subscribe(data => this.router.navigateByUrl("/product-manager"));
+      .subscribe(data => this.router.navigateByUrl("/admin-manager"));
   }
 }
