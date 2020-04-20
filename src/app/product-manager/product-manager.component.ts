@@ -9,19 +9,19 @@ import { Product } from "../Product";
 })
 export class ProductManagerComponent implements OnInit {
 
-  page=1;
-  pageSize=10;
+  // page=1;
+  // pageSize=10;
   // items.length=10;
   constructor( private productService: ProductService) {
 
    }
 
   ngOnInit() {
-    this.getProducts();
+    // this.getProducts();
   }
-    products: Product[];
-  getProducts(){
-return this.productService.getProducts().subscribe(response => this.products = response);
-  } 
+//     products: Product[];
+//   getProducts(){
+// return this.productService.getProducts().subscribe(response => this.products = response);
+//   } 
 
 }

@@ -13,7 +13,7 @@ List Product
 		<td>{{product.price}}</td>
 		<td>{{product.desc}}</td>
 		<td colspan="2">
-			<button  class="btn btn-primary" (click)='removeProduct(product.id)' >Xoá</button>
+			<button  class="btn btn-primary" (click)='removeItem(product.id)' >Xoá</button>
 			<button  class="btn btn-primary" routerLink='edit/{{product.id}}' >Sửa</button>
 		</td>
 	</tr>
