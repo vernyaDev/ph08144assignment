@@ -9,7 +9,11 @@ import { Product } from "../Product";
 })
 export class ProductManagerComponent implements OnInit {
 
+  page=1;
+  pageSize=10;
+  // items.length=10;
   constructor( private productService: ProductService) {
+
    }
 
   ngOnInit() {

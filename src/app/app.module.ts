@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +28,7 @@ import { ProductService } from './service/product.service';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule ],
   declarations: [ AppComponent, HelloComponent, FooterComponent, HeaderComponent, HomeComponent, SliderComponent, HomeProductComponent, ProductListComponent, ProductGirdComponent, ContactComponent, CartComponent, OurBrandComponent, ProductDetailsComponent, AboutComponent, BlogComponent, ProductManagerComponent, PageNotFound404Component, AdminComponent ],
   bootstrap:    [ AppComponent ],
    providers: [ProductService]

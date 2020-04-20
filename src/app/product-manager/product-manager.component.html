@@ -9,7 +9,7 @@
 		<th>Desc</th>
 		<th></th>
 	</thead>
-	<thead *ngFor='let product of products'>
+	<tr *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
 		<td>{{product.id}}</td>
 		<td>{{product.name}}</td>
 		<td>{{product.price}}</td>
@@ -18,7 +18,11 @@
       <button  class="btn btn-primary" (click)='removeProduct(product.id)' >Xoá</button>
 			<button  class="btn btn-primary" routerLink='/product/edit/{{product.id}}' >Sửa</button>
 		</td>
-	</thead>
+	</tr>
 </table>
+<ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="products.length"></ngb-pagination>
 
 
