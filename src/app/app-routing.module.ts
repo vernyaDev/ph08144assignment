@@ -16,8 +16,8 @@ import { HomeProductComponent } from "./home-product/home-product.component";
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomeComponent,children:[
-    { path: "products", component: ProductListComponent },
     { path: "", component: HomeProductComponent },
+    { path: "products", component: ProductListComponent },
     { path: "productDetail", component: ProductDetailsComponent },
     { path: "productGird", component: ProductGirdComponent },
     { path: "contact", component: ContactComponent },

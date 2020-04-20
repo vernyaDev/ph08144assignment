@@ -6,22 +6,21 @@
 			<div class="control"><a id="prev_hot" class="prev" href="#">&lt;</a><a id="next_hot" class="next"
 					href="#">&gt;</a></div>
 			<ul id="hot">
-				<li >
-					<div ngClass="row" >
+				<li>
+					<div ngClass="row">
 						<div ngClass="col-lg-4 col-md-6 mb-3" *ngFor='let product of products'>
 							<div class="products">
-								<div class="thumbnail"><a
-										routerLink="/productDetail"><img src={{product.img alt="Product Name"></a>
+								<div class="thumbnail"><a routerLink="/productDetail"><img src={{product.img alt="Product Name"></a>
 								</div>
 								<div class="productname">{{product.name}}</div>
 								<h4 class="price">${{product.price}}</h4>
-								<div class="button_group">
-									<button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button>
+										<div class="button_group">
+											<button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button>
+										</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</li>	
+				</li>
 			</ul>
 		</div>
 		<div class="our-brand">
